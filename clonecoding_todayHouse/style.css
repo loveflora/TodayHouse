@@ -1,0 +1,368 @@
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 40px;
+}
+
+header {
+  position: fixed;
+  width: 1500px;
+  /* width: 100%; */
+  /* margin: auto; */
+  display: flex;
+  /* 가로 정렬 */
+
+  /* 가로 위치 - 좌우 */
+  align-items: center;
+  /* 세로 위치 - 상하 */
+  /* 폭이 없음 */
+  height: 100px;
+  text-align: center;
+  z-index: 5;
+  background-color: white;
+  margin: 40px;
+  top: 0;
+}
+
+/* grid */
+/* 안씀 - 익스플로어가 인식 X */
+
+.bar1 {
+  width: 10%;
+}
+
+.bar2 {
+  width: 40%;
+  font-size: 24px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10%;
+  padding: 30px;
+  font-weight: bold;
+}
+
+.bar2 a:hover {
+  color: #35c5f0;
+  cursor: pointer;
+}
+
+.bar2-1:hover .hidden {
+  display: block;
+}
+
+.bar2 a:hover .hidden {
+  display: block;
+}
+/* ??? 질문 마우스 올리면 nav 메뉴 보이게 ? */
+
+.bar3 {
+  width: 30%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  /* flex-direction: column; */
+}
+
+.search-div {
+  display: flex;
+  width: 100%;
+}
+
+.search-div i {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+/* ??? before 사용이 가능한지 ? */
+/* .search::before {
+  content: "f078";
+  color: #35c5f0;
+} */
+
+.search {
+  padding: 10px;
+  padding-left: 40px;
+  border: 1px solid rgb(184, 182, 182);
+  border-radius: 5px;
+  font-size: 20px;
+  margin-right: auto;
+  width: 100%;
+  outline-color: #35c5f0;
+}
+
+.search:hover {
+  background-color: #eee;
+}
+
+.search::-webkit-input-placeholder {
+  color: rgb(217, 217, 217);
+}
+
+.icon-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+
+.icon-cart i {
+  color: #35c5f0;
+}
+
+.bar4 {
+  width: 20%;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn {
+  color: white;
+  background-color: #35c5f0;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #4da2ba;
+}
+
+nav {
+  height: 50px;
+  display: flex;
+  /* align-items: center; */
+  border-top: 1px solid rgb(206, 206, 206);
+  border-bottom: 1px solid rgb(206, 206, 206);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 10%;
+}
+
+nav li {
+  list-style: none; /* 목록 점 없애기 */
+  text-align: center;
+  flex-direction: column;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+  font-size: 22px; /* li a 둘다 상관없음 */
+}
+
+nav a:hover {
+  color: #35c5f0;
+}
+
+.main1 {
+  display: flex;
+  justify-content: center;
+  margin: 150px 30px 30px 30px;
+}
+
+.img-wrap1 {
+  position: relative;
+  overflow: hidden;
+  width: 900px;
+  height: 600px;
+  margin-right: 30px;
+  border-radius: 10px;
+}
+
+.main1-img1 {
+  width: 900px;
+  height: 600px;
+  margin-right: 30px;
+  border-radius: 10px;
+  filter: brightness(80%);
+}
+
+.main1-img1:hover {
+  transform: scale(1.05);
+}
+
+.main1-txt {
+  position: absolute;
+  bottom: 10%;
+  color: white;
+  left: 5%;
+  font-size: 40px;
+  font-weight: bold;
+  z-index: 1;
+  text-shadow: 2px 2px 2px black;
+}
+
+.img-wrap2 {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 600px;
+  border-radius: 10px;
+}
+
+.main1-img2 {
+  width: 300px;
+  height: 600px;
+  border-radius: 10px;
+}
+
+.main1-img2:hover {
+  transform: scale(1.05);
+}
+
+.main2 {
+  height: 260px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0px 50px;
+}
+
+.main2 img {
+  width: 150px;
+}
+
+.main2 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main2 span {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.main3 {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin: 0 80px;
+}
+
+.main3 .p1 {
+  color: black;
+  font-size: 28px;
+}
+
+.main3 .p2 {
+  color: #35c5f0;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.main4 {
+  margin: 60px;
+  height: 400px;
+  width: 90%;
+  margin: 30px 80px;
+}
+
+.main4-wrapper {
+  width: 1600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main4 .img-wrap {
+  position: relative;
+}
+
+.main4 span {
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  background-color: salmon;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+.main4 img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.main4 i {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  color: #eee;
+}
+
+.main4 p {
+  font-size: 22px;
+  /* text-align: center; */
+}
+
+.p1 {
+  color: #35c5f0;
+  font-weight: bold;
+  padding: 10px 0 0 10px;
+}
+
+.p2 {
+  padding-left: 10px;
+}
+
+footer {
+  height: 1000px;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer div {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+
+footer i {
+  color: gray;
+}
+
+footer p {
+  font-size: 14px;
+  color: gray;
+  padding: 30px;
+}
+
+.test {
+  background-color: #35c5f0;
+  position: flex;
+  height: 500px;
+  /* sticky 적용되는 높이 */
+}
+
+.sticky {
+  height: 50px;
+  background-color: antiquewhite;
+  position: sticky;
+  top: 100px;
+  /* header 높이 */
+}
+
+.box2 {
+  background-color: salmon;
+  height: 500px;
+}
